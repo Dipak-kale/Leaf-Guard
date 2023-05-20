@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plant Disease Detection</title>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        Plant Disease Detection
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="detection_model">Detection Models</a></li>
+            <li><a href="DiseasesANDCure">Diseases and Cure</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Welcome to Plant Disease Detection Hub</h1>
+
+
+
+        <center>
+            <div class="slider">
+                <div id="img">
+                    <img src="{{ url_for('static', filename='infected_plant.jpg') }}">
+                    <img src="{{ url_for('static', filename='istockphoto-534307769-612x612.jpg') }}">
+                    <img src="{{ url_for('static', filename='istockphoto-1342346355-170667a.jpg') }}">
+                </div>
+            </div>
+        </center>
+
+
+
+
+
+
+        <div class="text">
+            <h2 id="detect">Detection Models</h2>
+            <p>We have developed several deep learning models that can detect plant diseases from images. These models
+                have
+                been trained on large datasets of images and can accurately identify diseases such as powdery mildew,
+                black
+                spot, and bacterial blight. We are constantly upgrading our model to give you best</p>
+
+            <h2 id="about">About Us</h2>
+            <p>We are a group of researchers and developers who are working on using machine learning algorithms to
+                detect
+                plant diseases from images. Our goal is to create a system that can accurately identify diseases in
+                crops
+                and help farmers take appropriate actions to prevent further spread.</p>
+        </div>
+        <script src="{{ url_for('static', filename='plantDisease.js') }}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='main.js') }}" type="text/javascript"></script>
+    </main>
+    <footer>
+        <p>CONTACT US<br>
+
+        <p> &#169; made by dipak❤
+            <a href="mailto:mailtodipakkale@gmail.com" style="margin: 5%;">mailtodipakkale@gmail.com</a>
+            Call us :<a href="tel:+8421687205"> +91 842 168 7205</a>
+        </p>
+        </p>
+    </footer>
+</body>
+
+</html>

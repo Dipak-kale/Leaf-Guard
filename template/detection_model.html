@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Plant Disease Detection</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        Plant Disease Detection
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="detection_model">Detection Models</a></li>
+            <li><a href="DiseasesANDCure">Diseases and Cure</a></li>
+            <li><a href="#about">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+    <div class="container">
+        <div id="content" style="margin-top:2em">
+            <h1>Diagnosis for plant</h1>
+
+
+
+
+
+
+            <h2>Upload image here: </h2>
+            <div>
+                <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <label for="imageUpload" class="upload-label">
+                        Choose...
+                    </label>
+                    <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </form>
+
+                <div class="image-section" style="display:none;">
+                    <div class="img-preview">
+                        <div id="imagePreview">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-dark btn-lg " id="btn-predict">Predict!</button>
+                    </div>
+                </div>
+
+                <div class="loader" style="display:none;"></div>
+
+                <h3 id="result">
+                    <span> </span>
+                </h3>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="{{ url_for('static', filename='plantDisease.js') }}" type="text/javascript"></script>
+    <script src="{{ url_for('static', filename='main.js') }}" type="text/javascript"></script>
+
+
+    <footer>
+        <p>CONTACT US<br>
+
+        <p> &#169; made by dipak❤
+            <a href="mailto:mailtodipakkale@gmail.com" style="margin: 5%;">mailtodipakkale@gmail.com</a>
+            Call us :<a href="tel:+8421687205"> +91 842 168 7205</a>
+        </p>
+        </p>
+    </footer>
+</body>
+
+</html>
